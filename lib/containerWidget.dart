@@ -13,7 +13,7 @@ class belajarContainer extends StatelessWidget {
         margin: EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: Color.fromARGB(255, 7, 105, 204),
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(20),
           image: DecorationImage(image: NetworkImage('https://th.bing.com/th/id/OIP.--Ax2h4MuzGYLxya3_b5NQHaKc?rs=1&pid=ImgDetMain'),
           fit: BoxFit.cover)
           ),
