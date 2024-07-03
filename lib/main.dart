@@ -4,6 +4,7 @@ import 'package:myapp/rowColumn/colWidget.dart';
 import 'package:myapp/rowColumn/latihanRowCol.dart';
 import 'package:myapp/rowColumn/rowColWidget.dart';
 import 'package:myapp/rowColumn/rowWidget.dart';
+import 'package:myapp/rowColumn/tugasSimpelRowCol.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
           leading: Icon(Icons.home),
           centerTitle: true,
           title: const Text('Cidd Flutter')),
-      body: LatihanRowCol()
+      body: TugasSimpel()
     ));
   }
 }

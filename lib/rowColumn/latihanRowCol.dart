@@ -17,7 +17,7 @@ class LatihanRowCol extends StatelessWidget {
             color: Colors.red,
           ),
           Container(
-            child: Text('ini column 2'),
+            child: Text('ini column 1'),
             color: Colors.red,
           ),
           ],
@@ -26,15 +26,15 @@ class LatihanRowCol extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
              Container(
-            child: Text('ini column 1'),
+            child: Text('ini row 1'),
             color: Colors.red,
           ),
           Container(
-            child: Text('ini column 2'),
+            child: Text('ini row 2'),
             color: Colors.red,
           ),
           Container(
-            child: Text('ini column 3'),
+            child: Text('ini row 3'),
             color: Colors.red,
           ),
           ],
