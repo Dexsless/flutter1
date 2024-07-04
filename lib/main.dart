@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/containerWidget.dart';
+import 'package:myapp/listView/listBasic.dart';
+import 'package:myapp/listView/listBuilder.dart';
+import 'package:myapp/listView/listExample.dart';
+import 'package:myapp/listView/listSeparated.dart';
 import 'package:myapp/rowColumn/colWidget.dart';
 import 'package:myapp/rowColumn/latihanRowCol.dart';
 import 'package:myapp/rowColumn/rowColWidget.dart';
@@ -22,7 +26,8 @@ class MyApp extends StatelessWidget {
           leading: Icon(Icons.home),
           centerTitle: true,
           title: const Text('Cidd Flutter')),
-      body: TugasSimpel()
-    ));
+      body: ListExample()
+      )
+    );
   }
 }
