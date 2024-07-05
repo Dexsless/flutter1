@@ -1,33 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/containerWidget.dart';
-import 'package:myapp/listView/listBasic.dart';
-import 'package:myapp/listView/listBuilder.dart';
-import 'package:myapp/listView/listExample.dart';
-import 'package:myapp/listView/listSeparated.dart';
-import 'package:myapp/rowColumn/colWidget.dart';
-import 'package:myapp/rowColumn/latihanRowCol.dart';
-import 'package:myapp/rowColumn/rowColWidget.dart';
-import 'package:myapp/rowColumn/rowWidget.dart';
-import 'package:myapp/rowColumn/tugasSimpelRowCol.dart';
+import 'package:myapp/screens/aboutScreen.dart';
+import 'package:myapp/screens/homeScreen.dart';
+import 'package:myapp/screens/wisataScreen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.grey,
-          leading: Icon(Icons.home),
-          centerTitle: true,
-          title: const Text('Cidd Flutter')),
-      body: ListExample()
-      )
+      routes:{
+        '/about': (context) => AboutScreen(),
+        '/home': (context)=> HomeScreen(),
+        '/wisata': (context) => ListWisataScreen(),
+        
+      },
+      initialRoute: '/home',
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: HomeScreen()
     );
   }
 }
