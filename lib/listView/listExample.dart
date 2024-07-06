@@ -40,7 +40,7 @@ class ListExample extends StatelessWidget {
       itemCount: data.length,
       itemBuilder: (context, index) {
         return Card(
-          margin: EdgeInsets.all(10),
+          margin: const EdgeInsets.all(10),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
@@ -49,7 +49,7 @@ class ListExample extends StatelessWidget {
                 Text('Nama: ${data[index]['nama']}'),
                 Text('Umur: ${data[index]['umur'].toString()}'),
                 Text('Alamat: ${data[index]['alamat']}'),
-                Text('Galeri:'),
+                const Text('Galeri:'),
                 SizedBox(
                   height: 100, // Set height for the SizedBox to wrap ListView
                   child: ListView.builder(

@@ -7,18 +7,18 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('About'),
+        title: const Text('About'),
         backgroundColor: Colors.blue,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
         ),
       ),
       body: SingleChildScrollView(
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage("assets/images/background.png"),
               fit: BoxFit.cover,
@@ -29,17 +29,17 @@ class AboutScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(height: 20.0),
-                CircleAvatar(
+                const SizedBox(height: 20.0),
+                const CircleAvatar(
                   radius: 50.0,
                   backgroundImage: AssetImage('assets/images/travel_logo.png'),
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 Card(
                   color: Colors.white.withOpacity(0.8),
-                  margin: EdgeInsets.symmetric(vertical: 10.0),
-                  child: Padding(
-                    padding: const EdgeInsets.all(16.0),
+                  margin: const EdgeInsets.symmetric(vertical: 10.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(16.0),
                     child: Column(
                       children: [
                         Text(
@@ -63,9 +63,9 @@ class AboutScreen extends StatelessWidget {
                 ),
                 Card(
                   color: Colors.white.withOpacity(0.8),
-                  margin: EdgeInsets.symmetric(vertical: 10.0),
-                  child: Padding(
-                    padding: const EdgeInsets.all(16.0),
+                  margin: const EdgeInsets.symmetric(vertical: 10.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(16.0),
                     child: Column(
                       children: [
                         Text(
@@ -89,9 +89,9 @@ class AboutScreen extends StatelessWidget {
                 ),
                 Card(
                   color: Colors.white.withOpacity(0.8),
-                  margin: EdgeInsets.symmetric(vertical: 10.0),
-                  child: Padding(
-                    padding: const EdgeInsets.all(16.0),
+                  margin: const EdgeInsets.symmetric(vertical: 10.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(16.0),
                     child: Column(
                       children: [
                         Text(
@@ -115,9 +115,9 @@ class AboutScreen extends StatelessWidget {
                 ),
                 Card(
                   color: Colors.white.withOpacity(0.8),
-                  margin: EdgeInsets.symmetric(vertical: 10.0),
-                  child: Padding(
-                    padding: const EdgeInsets.all(16.0),
+                  margin: const EdgeInsets.symmetric(vertical: 10.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(16.0),
                     child: Column(
                       children: [
                         Text(
@@ -139,14 +139,14 @@ class AboutScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 40.0),
+                const SizedBox(height: 40.0),
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       foregroundColor: Colors.white,
                       backgroundColor: Colors.black,
-                      padding: EdgeInsets.symmetric(vertical: 16.0),
+                      padding: const EdgeInsets.symmetric(vertical: 16.0),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -154,7 +154,7 @@ class AboutScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: Text('Back'),
+                    child: const Text('Back'),
                   ),
                 ),
               ],

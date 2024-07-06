@@ -17,6 +17,8 @@ class ListBuilder extends StatelessWidget {
     "Android Oreo",
     "Android Pie"
   ];
+
+  ListBuilder({super.key});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,7 +26,7 @@ class ListBuilder extends StatelessWidget {
         itemBuilder: (context, bebas) {
           return Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(bebas.toString() + " - " + androidVersions[bebas].toString().toUpperCase()),
+            child: Text("$bebas - ${androidVersions[bebas].toString().toUpperCase()}"),
           );
         },
         itemCount: androidVersions.length,

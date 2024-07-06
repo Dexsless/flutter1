@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class BelajarRow extends StatelessWidget {
-  const BelajarRow({Key? key}) : super(key: key);
+  const BelajarRow({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Text('ini row 1'),

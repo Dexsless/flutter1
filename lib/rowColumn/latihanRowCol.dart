@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LatihanRowCol extends StatelessWidget {
-  const LatihanRowCol({Key? key}) : super(key: key);
+  const LatihanRowCol({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,12 +13,12 @@ class LatihanRowCol extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
              Container(
-            child: Text('ini column 1'),
             color: Colors.red,
+            child: const Text('ini column 1'),
           ),
           Container(
-            child: Text('ini column 1'),
             color: Colors.red,
+            child: const Text('ini column 1'),
           ),
           ],
          ),
@@ -26,16 +26,16 @@ class LatihanRowCol extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
              Container(
-            child: Text('ini row 1'),
             color: Colors.red,
+            child: const Text('ini row 1'),
           ),
           Container(
-            child: Text('ini row 2'),
             color: Colors.red,
+            child: const Text('ini row 2'),
           ),
           Container(
-            child: Text('ini row 3'),
             color: Colors.red,
+            child: const Text('ini row 3'),
           ),
           ],
          ),
@@ -43,12 +43,12 @@ class LatihanRowCol extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
              Container(
-            child: Text('ini column 1'),
             color: Colors.red,
+            child: const Text('ini column 1'),
           ),
           Container(
-            child: Text('ini column 2'),
             color: Colors.red,
+            child: const Text('ini column 2'),
           ),
           ],
          ),

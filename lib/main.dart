@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/profile.dart';
 import 'package:myapp/screens/aboutScreen.dart';
 import 'package:myapp/screens/homeScreen.dart';
+import 'package:myapp/screens/seni_screen.dart';
 import 'package:myapp/screens/wisataScreen.dart';
 
 void main() {
@@ -15,9 +17,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes:{
-        '/about': (context) => AboutScreen(),
-        '/home': (context)=> HomeScreen(),
+        '/about': (context) => const AboutScreen(),
+        '/home': (context)=> const HomeScreen(),
         '/wisata': (context) => ListWisataScreen(),
+        '/seni': (context) => ListSeniScreen(),
+        '/profile': (context) => ProfilePage(),
+
         
       },
       initialRoute: '/home',
@@ -26,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen()
+      home: const HomeScreen()
     );
   }
 }

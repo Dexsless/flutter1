@@ -17,12 +17,14 @@ class ListSeparated extends StatelessWidget {
     "Android Oreo",
     "Android Pie"
   ];
+
+  ListSeparated({super.key});
   @override
   Widget build(BuildContext context) {
     return Container(
       child: ListView.separated(
         separatorBuilder: (context, index) {
-          return Divider(
+          return const Divider(
             color: Colors.grey,
           );
         },

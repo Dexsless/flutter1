@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TugasSimpel extends StatelessWidget {
-  const TugasSimpel({Key? key}) : super(key: key);
+  const TugasSimpel({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,11 @@ class TugasSimpel extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            child: Center(
+            color: Colors.amber,
+            margin: const EdgeInsets.all(10),
+            width: double.infinity,
+            height: 100,
+            child: const Center(
               child: Text(
                 'Selamat Datang',
                 style: TextStyle(
@@ -19,13 +23,9 @@ class TugasSimpel extends StatelessWidget {
                 ),
               ),
             ),
-            color: Colors.amber,
-            margin: EdgeInsets.all(10),
-            width: double.infinity,
-            height: 100,
           ),
           Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             width: double.infinity,
             height: 100,
             child: Row(
@@ -43,12 +43,17 @@ class TugasSimpel extends StatelessWidget {
             ),
           ),
           Container(
+            color: Colors.blue,
+            margin: const EdgeInsets.all(10),
+            width: double.infinity,
+            height: 100,
+            padding: const EdgeInsets.all(10),
             child: Row(
               children: [
                 Image.network(
                     'https://2.bp.blogspot.com/-YaIFSXvdZ6A/V15mfd9xTRI/AAAAAAAAAPk/Y5oD_lWtxMgrgqjn5qRfn3CYtOePX-iVwCLcB/s1600/kotohanoniwa.png'),
-                SizedBox(width: 10), // Memberi jarak antara gambar dan teks
-                Expanded(
+                const SizedBox(width: 10), // Memberi jarak antara gambar dan teks
+                const Expanded(
                   child: Text(
                     'Lorem Ipsum dolor sit amet, consectetur adipiscing elit. '
                     'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
@@ -59,20 +64,20 @@ class TugasSimpel extends StatelessWidget {
                   ),
                 ),
               ],
-            ),
-            color: Colors.blue,
-            margin: EdgeInsets.all(10),
-            width: double.infinity,
-            height: 100,
-            padding: EdgeInsets.all(10), // Menambahkan padding dalam Container
+            ), // Menambahkan padding dalam Container
           ),
            Container(
+            color: Colors.blue,
+            margin: const EdgeInsets.all(10),
+            width: double.infinity,
+            height: 100,
+            padding: const EdgeInsets.all(10),
             child: Row(
               children: [
                 Image.network(
                     'https://th.bing.com/th/id/OIP.buddBUxnAY-cP1VHN7Nr1gHaKe?rs=1&pid=ImgDetMain'),
-                SizedBox(width: 10), // Memberi jarak antara gambar dan teks
-                Expanded(
+                const SizedBox(width: 10), // Memberi jarak antara gambar dan teks
+                const Expanded(
                   child: Text(
                     'Lorem Ipsum dolor sit amet, consectetur adipiscing elit. '
                     'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
@@ -83,12 +88,7 @@ class TugasSimpel extends StatelessWidget {
                   ),
                 ),
               ],
-            ),
-            color: Colors.blue,
-            margin: EdgeInsets.all(10),
-            width: double.infinity,
-            height: 100,
-            padding: EdgeInsets.all(10), // Menambahkan padding dalam Container
+            ), // Menambahkan padding dalam Container
           ),
         ],
       ),

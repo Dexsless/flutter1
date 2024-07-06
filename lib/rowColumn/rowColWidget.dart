@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BelajarRowColumn extends StatelessWidget {
-  const BelajarRowColumn({Key? key}) : super(key: key);
+  const BelajarRowColumn({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,31 +10,31 @@ class BelajarRowColumn extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            child: Text('ini column 1'),
             color: Colors.red,
+            child: const Text('ini column 1'),
           ),
           Container(
-            child: Text('ini column 2'),
             color: Colors.blue,
+            child: const Text('ini column 2'),
           ),
           Container(
-            child: Text('ini column 3'),
             color: Colors.green,
+            child: const Text('ini column 3'),
           ),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
              Container(
-            child: Text('ini row 1'),
             color: Colors.blue,
+            child: const Text('ini row 1'),
           ),
           Container(
-            child: Text('ini row 2'),
             color: Colors.blue,
+            child: const Text('ini row 2'),
           ),
           Container(
-            child: Text('ini row 3'),
             color: Colors.blue,
+            child: const Text('ini row 3'),
           ),
           ],
         ),

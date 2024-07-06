@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class ListBasic extends StatelessWidget {
-  const ListBasic({Key? key}) : super(key: key);
+  const ListBasic({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: ListView(
         // scrollDirection: Axis.vertical,
-        children: <Widget>[
+        children: const <Widget>[
           Padding(
             padding: EdgeInsets.all(8.0),
             child: Text("Android Cupcake"),

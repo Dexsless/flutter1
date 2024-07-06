@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class BelajarColumn extends StatelessWidget {
-  const BelajarColumn({Key? key}) : super(key: key);
+  const BelajarColumn({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Text('ini col 1'),

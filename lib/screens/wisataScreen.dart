@@ -60,11 +60,12 @@ class ListWisataScreen extends StatelessWidget {
     }
   ];
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Destinasi Wisata'),
+        title: const Text('Destinasi Wisata'),
         backgroundColor: Colors.blue,
       ),
       body: SafeArea(
@@ -98,8 +99,8 @@ class ListWisataScreen extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.bottomLeft,
                   height: 200,
-                  margin: EdgeInsets.all(10),
-                  padding: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     image:DecorationImage(
@@ -109,7 +110,7 @@ class ListWisataScreen extends StatelessWidget {
                   ),
                   child: Text(
                     wisataData[index]["nama"],
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,

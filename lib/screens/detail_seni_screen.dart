@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class DetailWisataScreen extends StatelessWidget {
+class DetailSeniScreen extends StatelessWidget {
   final String nama;
-  final String kota;
+  final String namaseni;
   final String image;
   final List<String> gallery;
   final String desc;
-  const DetailWisataScreen({super.key, 
+  const DetailSeniScreen({super.key, 
     required this.nama,
-    required this.kota,
+    required this.namaseni,
     required this.image,
     required this.gallery,
     required this.desc,
